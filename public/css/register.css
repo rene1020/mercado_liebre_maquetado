@@ -1,0 +1,54 @@
+.register_main{
+    
+    display: flex;
+  justify-content: center; 
+  align-items: center;  
+}
+.register_form {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+  flex-direction: column;
+}
+.register_form--perfil{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.button__secondary {
+    background-color:gray;
+    color: white;
+}
+
+.button__primary {
+    background-color:blue;
+    color: white;
+}
+.register_end{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; 
+}
+
+.register_main_seccion{
+    max-width: 500px;
+    width: 90%;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px #c0c0c0;
+    border-radius: 5px;
+}
+
+
+
+
+.register_main_title{
+    margin-bottom: 30px;
+    text-align: end;
+}

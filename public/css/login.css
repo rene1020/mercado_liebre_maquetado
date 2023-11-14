@@ -1,0 +1,116 @@
+.login_main{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+.login_form{
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+  flex-direction: column;
+}
+.button__primary-login {
+    background-color:blue;
+    color: white;
+    width: 90%;
+    
+    
+   
+}
+.login_end{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form__input-login {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    margin-top: 10px;
+    }
+    .form__input-login--pass{
+        width: 80%;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #c0c0c0;
+        margin-top: 10px;
+        }
+    
+.login_main_seccion{
+        
+    width: 90%;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px #c0c0c0;
+    border-radius: 5px;
+}
+.login_main_title{
+    margin-bottom: 30px;
+    text-align:start;
+}
+
+@media (min-width: 768px){
+    .button__primary-login {
+        padding: 10px; 
+        box-sizing: border-box;
+        
+       
+    }
+    .login_end{
+
+        position: relative;
+        text-align: center;
+    
+        margin-left: -18px;
+        margin-right: 3px;
+        width: 800%;
+    }
+    .form__input-login {
+        width: 100%;
+        margin-left: 25px;
+       
+        
+       
+        }
+        .form__input-login--pass{
+            width: 81%;
+            margin-left: 20px;
+            border-radius: 5px;
+            
+           
+            }
+            .form__label{
+                margin-left: 20px;
+            }
+            .form_msg-error{
+                margin-left: 25px;
+            }
+
+}
+@media (min-width: 1140px){
+    .form__input-login {
+       
+        margin-left: 80px;
+       
+        
+       
+        }
+        .form__input-login--pass{
+            
+            margin-left: 80px;
+            
+           
+            }
+            .form__label{
+                margin-left: 80px;
+            }
+            .form_msg-error{
+                margin-left: 85px;
+            }
+
+
+
+}
