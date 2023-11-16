@@ -1,79 +1,219 @@
-header {
-    background-color: var(--colorAmarillo);
-    padding: 20px;
+body {
+    max-width: 1366px;
+    margin: 0 auto;
 }
 
-header ul li {
+.home__header {
+    background-color: var(--colorAmarillo);
+}
 
+.home__header--top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.home__header--img {
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.home__header--busqueda {
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.home__header--busqueda input {
+    width: 75%;
+    border: none;
+    transition: all 1s;
+}
+
+.home__header--busqueda button {
+    top: 11px;
+    position: absolute;
+    border: none;
+    background-color: white;
+    color: var(--colorGrisOscuro);
+    margin: auto;
+    transition: all 1s;
+}
+
+.busqueda:hover{
+    background-color: lightblue;
+}
+
+.busqueda1:hover{
+    background-color: lightblue;
+}
+
+.home__header--busqueda:hover input::placeholder
+{
+    color: black;
+}
+
+.home__header--tarjeta {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.home__header--buttom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home__header__navbar {
+    padding-left: 0px;
+    padding-top: 20px;
+    list-style-type: none;
     display: none;
 }
 
-.header__div__logo--barra--titulo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.home__header__navbar__user {
+    padding-left: 0px;
+    padding-top: 20px;
+    list-style-type: none;
+    display: none;
 }
 
-.header__div__logo {
-    margin-right: 5px;
-    width: 30%;
+.home__header__navbar--link {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
 }
 
-.header__div__barra {
-    margin-left: 5px;
-    width: 30%;
-}
-
-.header__div__titulo {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 5px;
-}
-
-.header__nav__menu {
+.home__header__menu {
     padding-bottom: 15px;
+    padding-top: 15px;
 }
 
-.header__nav__menu ul li {
-    font-size: 15px;
-}
-
-.header__nav__ingreso {
-    padding-bottom: 15px;
-}
-
-.header__nav__ingreso ul li {
-    font-size: 15px;
-}
-
-.header__nav__ingreso i {
-    margin-left: 5px;
-}
-
-.header__div__burguer {
-    display: flex;
-    justify-content: center;
-}
-
-.header__div__burguer a {
-    font-size: 20px;
-    color: white;
-    margin-bottom: 20px;
+.home__header__menu--hamburger {
     background-color: var(--colorCeleste);
-    padding: 7.5px 10px;
+    color: var(--colorGrisclaro);
+    margin: 0 auto;
+    display: block;
     border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    font-size: 16px;
+    border: none;
 }
 
-@media (min-width: 768px) {
+.home__header--banner img {
+    width: 100%;
+    position: relative;
+    top: 4px;
+}
 
-    header ul li {
-        display: block;
-        padding-left: 20px;
+/* tablet */
+@media (min-width: 485px) {
+    .header {
+        align-items: center;
     }
 
-    .header__div__burguer {
+    .home__header--img {
+        width: 33%;
+    }
+
+    .home__header--busqueda {
+        width: 33%;
+    }
+
+    .home__header--busqueda input{
+        width: 80%;
+        height: 40px;
+    }
+
+    .home__header--busqueda button{
+        top: 10px;
+        height: 40px;
+        font-size: 17px;
+    }
+
+    .home__header--busqueda input::placeholder {
+        font-size: 12px;
+    }
+
+    .home__header--tarjeta {
+        width: 33%;
+    }
+
+    .home__header__navegador{
+        margin-right: auto;
+    }
+
+    .home__header__navegador2{
+        margin-left: auto;
+    }
+
+
+    .home__header__navbar {
+        display: flex;
+    }
+
+    .home__header__navbar__user {
+        display: flex;
+    }
+
+    .home__header__navbar--link {
+        padding: 3px;
+    }
+
+    .home__header__menu--hamburger {
         display: none;
     }
+}
 
+/*desktop usa lo mismo que el media queri de tablet*/
+@media (min-width: 769px) {
+    .header {
+        align-items: center;
+    }
+
+    .home__header--img {
+        width: 33%;
+    }
+
+    .home__header--busqueda {
+        width: 33%;
+    }
+
+    .home__header--busqueda input::placeholder {
+        font-size: 16px;
+    }
+
+    .home__header--busqueda input{
+        width: 90%;
+    }
+
+    .home__header--buttom {
+        justify-content: space-evenly;
+    }
+
+    .home__header--tarjeta {
+        width: 33%;
+        font-size: 18px;
+    }
+
+    .home__header__navbar {
+        display: flex;
+    }
+
+    .home__header__navbar__user {
+        display: flex;
+    }
+
+    .home__header__navbar--link {
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .home__header__menu--hamburger {
+        display: none;
+    }
 }

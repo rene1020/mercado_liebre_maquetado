@@ -1,36 +1,17 @@
-* {
+*
+  {
     margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
-  }
-:root {
-    --colorAmarillo: #EAC926;
-    --colorAzul: #03264C;
-    --colorCeleste: #1259c3;
-    --colorGrisOscuro: #666;
-    --colorGrisClaro: #ebebeb;
-    --colorVerde: #39b54a;
-    --tipografiaGeneral: "Roboto", sans-serif;
-}
-
-body{
     font-family: var(--tipografiaGeneral);
-    background-color: var(--colorGrisClaro);
-    max-width: 1140px;
-    margin: 0 auto;
-    
   }
-
-ul li {
-    list-style: none;
-    font-size: 12px; 
-}
-
-a{
-    text-decoration: none; 
-
-}
-
-ul{
-    padding-left: 0;
-}
+  :root
+    {
+    --colorAmarillo : #EAC926;
+    --colorAzul :  #03264C;
+    --colorCeleste : #1259c3;
+    --colorGrisoscuro : #666;
+    --colorGrisclaro : #ebebeb;
+    --colorVerde : #39b54a;
+    --tipografiaGeneral : "Roboto",sans-serif;
+    --colorEnvio: #0022AA;
+    }
